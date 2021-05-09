@@ -1,0 +1,11 @@
+:host::ng-deep .p-datatable-thead {
+  background-color: yellow !important;
+}
+@media print {
+  :host #noPrint {
+    display: none;
+  }
+  .p-datatable-thead {
+    -webkit-print-color-adjust: exact; // chrome 顯示顏色
+  }
+}

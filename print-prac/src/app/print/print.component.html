@@ -1,0 +1,43 @@
+<div id="noPrint">
+  <p>報表列印測試</p>
+  <button (click)="print()">列印</button>
+</div>
+
+<div id="printWrap">
+  <!-- <p-table [value]="posts">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>userId</th>
+        <th>id</th>
+        <th>title</th>
+        <th>body</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-post>
+      <tr>
+        <td>{{post.userId}}</td>
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+      </tr>
+    </ng-template>
+  </p-table> -->
+  <table>
+    <thead class="p-datatable-thead">
+      <tr>
+        <th>userId</th>
+        <th>id</th>
+        <th>title</th>
+        <th>body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <th>{{post.userId}}</th>
+        <td>{{post.id}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,17 @@
+.d-flex {
+  display: flex;
+}
+
+aside {
+  min-width: 100px;
+  background-color: red;
+}
+
+nav {
+  background-color: green;
+}
+@media print {
+  aside,nav {
+    display: none;
+  }
+}
